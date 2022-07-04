@@ -1,0 +1,37 @@
+name: GameMode
+version: '${project.version}'
+main: net.ddns.gentup.gamemode.GameMode
+authors: [GentUP, EasyClifton]
+description: Permissions per gamemode
+api-version: 1.13
+commands:
+  gamemode:
+    description: The command to switch gamemodes
+    aliases: gm
+    usage: "§cUsage: /gamemode | gm <gamemode> [player]"
+    permission-message: U no have permz
+    permission: gamemode.use
+
+permissions:
+  gamemode.*:
+    description: Gives access to all game modes
+    children:
+      gamemode.survival: true
+      gamemode.creative: true
+      gamemode.adventure: true
+      gamemode.spectator: true
+  gamemode.survival:
+    description: Set gamemode to survival
+    default: op
+  gamemode.creative:
+    description: Set gamemode to creative
+    default: op
+  gamemode.adventure:
+    description: Set gamemode to adventure
+    default: op
+  gamemode.spectator:
+    description: Set gamemode to spectator
+    default: op
+  gamemode.others:
+    description: Change other players' game mode
+    default: op
