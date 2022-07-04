@@ -22,5 +22,9 @@ gamemode.creative      | Access to creative          |
 gamemode.adventure     | Access to adventure         |
 gamemode.spectator     | Access to spectator         |
 
----
-P.S. I know this code is horrible, I'll improve it, I swear
+## Compiling
+
+Run `mvn clean package` and locate to the `target` folder.
+
+***
+P.S. I know this code is not that good, I'll improve it, I swear!!1!
