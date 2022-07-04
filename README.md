@@ -1,11 +1,11 @@
 # GameMode
 
-Allows assigning per-gamemode permissions (e.g. only give your mods only survival and spectator)
+Allows assigning per-gamemode permissions (e.g. only give your mods access to survival and spectator)
 
 ## Commands
 
 Everything is as in vanilla, except for these things:
-* `/gm` is supported alongside `/gamemode`
+* `/gm` is a shorthand to `/gamemode`
 * Numeric gamemode codes `(0, 1, 2, 3)` are supported alongside full gamemode names.
 
 ## Permissions
